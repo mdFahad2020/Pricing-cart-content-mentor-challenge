@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+#card {
+  width: 600px;
+  height: 400px;
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#top-secton {
+  width: 100%;
+  height: 45%;
+  padding: 25px;
+}
+
+#bottom-section {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  color: #fff;
+}
+
+#bottom-left-section {
+  width: 55%;
+  height: 100%;
+  background-color: #2ab2af;
+  padding: 25px;
+}
+
+#bottom-right-section {
+  width: 50%;
+  height: 100%;
+  background-color: #1ac9c5;
+  padding: 25px;
+}
+
+#top-secton h2 {
+  color: #2ab2af;
+  margin-bottom: 15px;
+}
+
+#top-secton h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#top-secton p {
+  color: #98A6BD;
+  line-height: 25px;
+}
+
+button {
+  color: #fff;
+  background-color: #c0df34;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 5px;
+  /* transition: all 0.2s linear; */
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a9c42d;
+  transform: scale(1.01);
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#bottom-left-section h4 {
+  margin-bottom: 15px;
+}
+
+#bottom-left-section p {
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+
+#price-frequency,
+#price {
+  display: inline-block;
+}
+
+#price-frequency {
+  position: relative;
+  top: -3px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-left: 5px;
+}
+
+#price-contianer {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 630px) {
+  #card {
+    width: 375px;
+    height: 100%;
+  }
+
+  #bottom-section {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+  }
+
+  #bottom-left-section {
+    width: 100%;
+  }
+
+  #bottom-right-section {
+    width: 100%;
+  }
+}
